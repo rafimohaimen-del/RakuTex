@@ -774,3 +774,301 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==========================================================================
+   RECREATED: CATEGORIES SECTION (from selection.png)
+   ========================================================================== */
+.categories-showcase-section {
+  background-color: var(--rt-white);
+  padding: clamp(64px, 8vw, 110px) 0;
+  border-top: 1px solid var(--rt-line);
+}
+
+.categories-showcase-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.categories-showcase-title {
+  font-size: clamp(2.2rem, 4vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--rt-text);
+  max-width: 680px;
+}
+
+.accent-olive {
+  color: var(--rt-olive-500);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.btn-view-all-products {
+  background-color: #4A5524;
+  color: var(--rt-white);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 13px 28px;
+  border-radius: var(--rt-radius-pill);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-view-all-products:hover {
+  background-color: var(--rt-olive-600);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(74, 85, 36, 0.3);
+}
+
+.categories-5col-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.category-clean-card {
+  background-color: #F7F8F2;
+  border: 1px solid var(--rt-line);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.category-clean-card:hover {
+  border-color: var(--rt-olive-300);
+  background-color: #F2F4EB;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(38, 43, 17, 0.06);
+}
+
+.category-clean-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.category-clean-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke: var(--rt-olive-500);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.category-clean-title {
+  font-family: var(--rt-font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--rt-text);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.category-clean-desc {
+  font-size: 0.875rem;
+  color: var(--rt-stone-700);
+  line-height: 1.45;
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+.category-clean-link {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--rt-olive-600);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.category-clean-card:hover .category-clean-link {
+  color: var(--rt-olive-800);
+  gap: 9px;
+}
+
+@media (max-width: 1200px) {
+  .categories-5col-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-5col-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .category-clean-card {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-5col-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   RECREATED: SERVICES SECTION (from work.png)
+   ========================================================================== */
+.services-work-section {
+  background-color: #57622A;
+  color: var(--rt-white);
+  padding: clamp(72px, 9vw, 120px) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-work-watermark {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 680px;
+  height: 680px;
+  stroke: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.services-work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: clamp(40px, 6vw, 84px);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.services-work-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+}
+
+.services-work-title {
+  color: var(--rt-white);
+  font-size: clamp(2.35rem, 4.2vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.services-work-title em {
+  color: var(--rt-gold-500);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.services-work-desc {
+  font-size: clamp(1.0625rem, 1.6vw, 1.2rem);
+  color: #E8EADB;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.btn-services-work {
+  background-color: var(--rt-gold-500);
+  color: #262B11;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 13px 28px;
+  border-radius: var(--rt-radius-pill);
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.btn-services-work:hover {
+  background-color: var(--rt-gold-400);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+.services-seamless-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-seamless-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.service-seamless-item:last-child {
+  border-bottom: none;
+}
+
+.service-seamless-item:hover {
+  transform: translateX(4px);
+}
+
+.service-seamless-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--rt-gold-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-seamless-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--rt-gold-500);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-seamless-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-seamless-title {
+  font-family: var(--rt-font-body);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--rt-white);
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+.service-seamless-desc {
+  font-size: 0.9375rem;
+  color: #E8EADB;
+  line-height: 1.45;
+}
+
+@media (max-width: 960px) {
+  .services-work-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
