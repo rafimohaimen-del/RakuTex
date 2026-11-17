@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Catalogue — Raku Tex BD. | Knit, Woven, Sweater & Accessories</title>
+  <meta name="description" content="Explore our 10 apparel manufacturing categories in Bangladesh — knitwear, heavy knit, activewear, woven, denim, outerwear, sweaters, lingerie, accessories and home textiles.">
+  
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <aside class="top-bar" aria-label="Quick contact information">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>📍 Sourcing & buying house · Uttara, Dhaka, Bangladesh</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:zakaria@rakutex.com" class="top-bar-link">✉ zakaria@rakutex.com</a>
+        <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="top-bar-link top-bar-whatsapp">
+          WhatsApp +880 1676 792044
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="Raku Tex BD. Home">
+        <svg class="logo-icon-svg" viewBox="0 0 48 48" fill="none" stroke="#F2B72E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M24 16V12C24 9.5 25.5 7.5 28 7.5C30.5 7.5 32 9 32 11C32 13.5 29.5 15 26.5 15H24" />
+          <path d="M24 16L6 32C5 33 5.5 34 7 34H41C42.5 34 43 33 42 32L24 16Z" />
+          <path d="M24 34V39" />
+        </svg>
+        <div class="logo-text-group">
+          <span class="logo-name">Raku Tex BD.</span>
+          <span class="logo-tagline">A sourcing platform of quality and comfort...</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="sustainability.html" class="nav-link">Sustainability</a>
+        <a href="quote.html" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="quote.html" class="header-cta-btn">Request a quote <span>→</span></a>
+      <button class="mobile-nav-toggle" aria-label="Open mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <span class="logo-name" style="font-size: 1.25rem;">Raku Tex BD.</span>
+      <button class="drawer-close" aria-label="Close mobile menu">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="quote.html">Contact & Request a quote</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="quote.html" class="btn btn-gold" style="width: 100%;">Request a quote →</a>
+      <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white" style="width: 100%;">Chat on WhatsApp</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- INNER HERO -->
+    <section class="inner-page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <span>Products</span>
+        </nav>
+        <span class="eyebrow eyebrow-gold">PRODUCT PORTFOLIO</span>
+        <h1 class="inner-hero-title">
+          All kinds of knit, woven and sweater — <span class="accent-gold">made to your specification.</span>
+        </h1>
+        <p class="inner-hero-lead">
+          We don’t sell from a fixed catalogue. Every order starts from your design; these are the categories our 100+ partner factories produce every day.
+        </p>
+      </div>
+    </section>
+
+    <!-- CATALOGUE & FILTER SECTION -->
+    <section class="section-pad" style="background-color: var(--rt-paper);">
+      <div class="container">
+        <!-- Filter Controls Bar -->
+        <div class="flex items-center justify-between" style="gap: 20px; flex-wrap: wrap; margin-bottom: 24px;">
+          <div class="flex gap-2" style="flex-wrap: wrap;">
+            <button class="filter-tab-pill product-filter-btn active" data-filter="all">All 10</button>
+            <button class="filter-tab-pill product-filter-btn" data-filter="knit">Knit 3</button>
+            <button class="filter-tab-pill product-filter-btn" data-filter="woven">Woven 3</button>
+            <button class="filter-tab-pill product-filter-btn" data-filter="sweater">Sweater 1</button>
+            <button class="filter-tab-pill product-filter-btn" data-filter="lifestyle">Lifestyle 3</button>
+          </div>
+
+          <div style="min-width: 260px; max-width: 360px; width: 100%;">
+            <input type="text" id="product-search-input" class="form-input" placeholder="Search products, e.g. hoodie, polo, towel" aria-label="Search product catalogue">
+          </div>
+        </div>
+
+        <!-- Count indicator -->
+        <div id="product-count-display" style="font-size: 0.875rem; color: var(--rt-stone-500); margin-bottom: 24px;">
+          Showing 10 of 10 categories
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;">
+          <!-- 1. Knitwear -->
+          <article class="product-card product-grid-item" data-category="knit" data-keywords="t-shirt polo tank tops leggings sleepwear single jersey pique rib interlock slub">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">KNIT</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-knitwear"></use></svg>
+              </div>
+              <h3 class="product-card-title">Knitwear</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">T-shirts</span>
+                <span class="badge-tag">Polo shirts</span>
+                <span class="badge-tag">Tank tops</span>
+                <span class="badge-tag">Leggings</span>
+                <span class="badge-tag">Sleepwear</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> single jersey, piqué, rib, interlock, slub
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 2. Heavy knit -->
+          <article class="product-card product-grid-item" data-category="knit" data-keywords="hoodies sweatshirts joggers zip-throughs fleece french terry brushed back waffle">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">KNIT</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-heavy-knit"></use></svg>
+              </div>
+              <h3 class="product-card-title">Heavy knit</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Hoodies</span>
+                <span class="badge-tag">Sweatshirts</span>
+                <span class="badge-tag">Joggers</span>
+                <span class="badge-tag">Zip-throughs</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> fleece, French terry, brushed back, waffle
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 3. Activewear -->
+          <article class="product-card product-grid-item" data-category="knit" data-keywords="track suits sports tees leggings shorts poly-spandex mesh moisture-wicking">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">KNIT</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-activewear"></use></svg>
+              </div>
+              <h3 class="product-card-title">Activewear</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Track suits</span>
+                <span class="badge-tag">Sports tees</span>
+                <span class="badge-tag">Leggings</span>
+                <span class="badge-tag">Shorts</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> poly-spandex, mesh, moisture-wicking knits
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 4. Woven -->
+          <article class="product-card product-grid-item" data-category="woven" data-keywords="formal casual shirts trousers chinos dresses poplin oxford twill linen viscose">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">WOVEN</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-woven"></use></svg>
+              </div>
+              <h3 class="product-card-title">Woven</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Formal shirts</span>
+                <span class="badge-tag">Casual shirts</span>
+                <span class="badge-tag">Trousers</span>
+                <span class="badge-tag">Chinos</span>
+                <span class="badge-tag">Dresses</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> poplin, oxford, twill, linen, viscose
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 5. Denim -->
+          <article class="product-card product-grid-item" data-category="woven" data-keywords="jeans jackets shirts skirts shorts rigid stretch washed finishes">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">WOVEN</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-denim"></use></svg>
+              </div>
+              <h3 class="product-card-title">Denim</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Jeans</span>
+                <span class="badge-tag">Jackets</span>
+                <span class="badge-tag">Shirts</span>
+                <span class="badge-tag">Skirts</span>
+                <span class="badge-tag">Shorts</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> rigid and stretch denim, washed finishes
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 6. Outerwear -->
+          <article class="product-card product-grid-item" data-category="woven" data-keywords="jackets coats parkas gilets windbreakers nylon polyester cotton twill padded quilted">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">WOVEN</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-outerwear"></use></svg>
+              </div>
+              <h3 class="product-card-title">Outerwear</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Jackets</span>
+                <span class="badge-tag">Coats</span>
+                <span class="badge-tag">Parkas</span>
+                <span class="badge-tag">Gilets</span>
+                <span class="badge-tag">Windbreakers</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> nylon, polyester, cotton twill, padded and quilted
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 7. Sweaters -->
+          <article class="product-card product-grid-item" data-category="sweater" data-keywords="pullovers cardigans vests knit dresses cotton acrylic wool-blend yarns flat knit">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">SWEATER</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-sweaters"></use></svg>
+              </div>
+              <h3 class="product-card-title">Sweaters</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Pullovers</span>
+                <span class="badge-tag">Cardigans</span>
+                <span class="badge-tag">Vests</span>
+                <span class="badge-tag">Knit dresses</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> cotton, acrylic and wool-blend yarns, fine to chunky gauges
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 8. Lingerie -->
+          <article class="product-card product-grid-item" data-category="lifestyle" data-keywords="bras briefs boxers loungewear cotton-spandex lace microfibre">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">LIFESTYLE</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-lingerie"></use></svg>
+              </div>
+              <h3 class="product-card-title">Lingerie</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Bras</span>
+                <span class="badge-tag">Briefs</span>
+                <span class="badge-tag">Boxers</span>
+                <span class="badge-tag">Loungewear</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> cotton-spandex, lace, microfibre
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 9. Accessories -->
+          <article class="product-card product-grid-item" data-category="lifestyle" data-keywords="tote bags denim bags belts pouches canvas denim woven fabrics">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">LIFESTYLE</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-accessories"></use></svg>
+              </div>
+              <h3 class="product-card-title">Accessories</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Tote bags</span>
+                <span class="badge-tag">Denim bags</span>
+                <span class="badge-tag">Belts</span>
+                <span class="badge-tag">Pouches</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> canvas, denim, woven fabrics
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+
+          <!-- 10. Home textiles -->
+          <article class="product-card product-grid-item" data-category="lifestyle" data-keywords="towels bed linen kitchen textiles cushion covers terry cotton percale linen">
+            <div>
+              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
+                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">LIFESTYLE</span>
+                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+              </div>
+              <div class="card-icon-wrap" style="height: 100px;">
+                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-home-textiles"></use></svg>
+              </div>
+              <h3 class="product-card-title">Home textiles</h3>
+              <div class="product-tag-list">
+                <span class="badge-tag">Towels</span>
+                <span class="badge-tag">Bed linen</span>
+                <span class="badge-tag">Kitchen textiles</span>
+                <span class="badge-tag">Cushion covers</span>
+              </div>
+              <p class="product-fabric-meta">
+                <strong>Typical fabrics:</strong> terry, cotton percale, linen
+              </p>
+            </div>
+            <div class="product-card-footer">
+              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
+              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DON'T SEE YOUR PRODUCT CALLOUT -->
+    <section class="section-pad" style="background-color: var(--rt-surface-deep); color: var(--rt-white);">
+      <div class="container">
+        <div class="flex items-center justify-between" style="gap: 40px; flex-wrap: wrap;">
+          <div style="max-width: 680px;">
+            <h2 style="color: var(--rt-white); margin-bottom: 16px;">
+              Don’t see your product? <span class="accent-gold">Ask anyway.</span>
+            </h2>
+            <p style="font-size: 1.0625rem; color: var(--rt-olive-200); line-height: 1.6;">
+              Our network covers the full 360° of Bangladesh apparel manufacturing. If it can be made here, we can source it — and guide you on fabric and construction if you need it.
+            </p>
+          </div>
+          <div class="flex gap-4" style="flex-wrap: wrap;">
+            <a href="quote.html" class="btn btn-gold">Upload a tech pack →</a>
+            <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">WhatsApp us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <svg class="footer-watermark" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M24 16V12C24 9.5 25.5 7.5 28 7.5C30.5 7.5 32 9 32 11C32 13.5 29.5 15 26.5 15H24" />
+      <path d="M24 16L6 32C5 33 5.5 34 7 34H41C42.5 34 43 33 42 32L24 16Z" />
+      <path d="M24 34V39" />
+    </svg>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="site-logo">
+            <svg class="logo-icon-svg" viewBox="0 0 48 48" fill="none" stroke="#F2B72E" stroke-width="2">
+              <path d="M24 16V12C24 9.5 25.5 7.5 28 7.5C30.5 7.5 32 9 32 11C32 13.5 29.5 15 26.5 15H24" />
+              <path d="M24 16L6 32C5 33 5.5 34 7 34H41C42.5 34 43 33 42 32L24 16Z" />
+              <path d="M24 34V39" />
+            </svg>
+            <div class="logo-text-group">
+              <span class="logo-name">Raku Tex BD.</span>
+              <span class="logo-tagline">A sourcing platform of quality and comfort...</span>
+            </div>
+          </a>
+          <p class="footer-brand-p">A Bangladesh sourcing and buying house serving brands, retailers and importers across Asia, Europe and the USA.</p>
+          <span class="footer-pqs-pill">PQS — PRICE · QUALITY · SERVICE</span>
+        </div>
+        <div>
+          <h4 class="footer-col-title">EXPLORE</h4>
+          <div class="footer-links">
+            <a href="about.html">About us</a>
+            <a href="services.html">Services & work model</a>
+            <a href="products.html">Products</a>
+            <a href="sustainability.html">Sustainability & compliance</a>
+            <a href="quote.html">Request a quote</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">WHAT WE SOURCE</h4>
+          <div class="footer-links">
+            <a href="category-knitwear.html">Knit & heavy knit</a>
+            <a href="products.html">Woven & denim</a>
+            <a href="products.html">Sweaters & outerwear</a>
+            <a href="products.html">Activewear & lingerie</a>
+            <a href="products.html">Accessories & home textiles</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">OFFICE</h4>
+          <p class="footer-office-address">
+            Friends Rangdhanu, House 50 (1st Floor),<br>
+            Road 03, Sector 12, Uttara, Dhaka 1230,<br>
+            Bangladesh
+          </p>
+          <div class="footer-contact-person">
+            <span class="footer-contact-name">Kazi Zakaria, CEO</span>
+            <div class="footer-contact-info">+880 1676 792044 · <a href="mailto:zakaria@rakutex.com">zakaria@rakutex.com</a></div>
+          </div>
+          <div class="footer-contact-person">
+            <span class="footer-contact-name">Md. Mejbah Uddin, COO</span>
+            <div class="footer-contact-info">+880 1711 224933 · <a href="mailto:mejbah@rakutex.com">mejbah@rakutex.com</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Raku Tex BD. All rights reserved. Est. June 2024.</div>
+        <div>Partner factory details are shared with buyers on request, under NDA.</div>
+        <div><a href="privacy-policy.html">Privacy policy</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat with CEO on WhatsApp">
+    <svg viewBox="0 0 24 24"><use href="assets/icons/icons.svg#icon-whatsapp"></use></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filter.js"></script>
+</body>
+</html>

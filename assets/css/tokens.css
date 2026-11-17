@@ -1,0 +1,85 @@
+:root {
+  /* Olive Scale (Primary) */
+  --rt-olive-50: #F4F5EC;
+  --rt-olive-100: #E8EADB;
+  --rt-olive-200: #CDD2B4;
+  --rt-olive-300: #A3AB7E;
+  --rt-olive-400: #7A8450;
+  --rt-olive-500: #57622A; /* Primary Brand Olive */
+  --rt-olive-600: #4D5725;
+  --rt-olive-700: #434C1F;
+  --rt-olive-800: #343A17;
+  --rt-olive-900: #262B11; /* Deep Olive */
+
+  /* Gold Scale (Accent) */
+  --rt-gold-50: #FEF8E8;
+  --rt-gold-100: #FDF1D2;
+  --rt-gold-200: #FAE3A6;
+  --rt-gold-300: #F8D47A;
+  --rt-gold-400: #F5C552;
+  --rt-gold-500: #F2B72E; /* Hanger Gold */
+  --rt-gold-600: #C9921A;
+  --rt-gold-700: #8A6410;
+  --rt-gold-800: #6B4D0B;
+  --rt-gold-900: #3A2C06;
+
+  /* Neutrals */
+  --rt-white: #FFFFFF;
+  --rt-paper: #FAFAF4;
+  --rt-line: #DFE0D4;
+  --rt-stone-300: #B9BBAE;
+  --rt-stone-500: #6B6E5F;
+  --rt-stone-700: #45483A;
+  --rt-ink: #1C1F12;
+
+  /* Feedback */
+  --rt-success: #2F7D4F;
+  --rt-error: #B3261E;
+  --rt-info: #2D5B8A;
+
+  /* Semantic Mappings */
+  --rt-bg: var(--rt-paper);
+  --rt-surface: var(--rt-white);
+  --rt-surface-brand: var(--rt-olive-500);
+  --rt-surface-deep: var(--rt-olive-900);
+  --rt-surface-tint: var(--rt-olive-50);
+  --rt-text: var(--rt-ink);
+  --rt-text-muted: var(--rt-stone-500);
+  --rt-action: var(--rt-gold-500);
+  --rt-link: var(--rt-olive-500);
+  --rt-border: var(--rt-line);
+
+  /* Typography */
+  --rt-font-display: 'Newsreader', Georgia, serif;
+  --rt-font-body: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --rt-font-label: 'Saira Semi Condensed', 'Arial Narrow', sans-serif;
+
+  /* Spacing */
+  --rt-space-1: 4px;
+  --rt-space-2: 8px;
+  --rt-space-3: 12px;
+  --rt-space-4: 16px;
+  --rt-space-5: 24px;
+  --rt-space-6: 32px;
+  --rt-space-7: 48px;
+  --rt-space-8: 64px;
+  --rt-space-9: 96px;
+  --rt-space-10: 128px;
+
+  /* Radius */
+  --rt-radius-sm: 4px;
+  --rt-radius-md: 10px;
+  --rt-radius-lg: 16px;
+  --rt-radius-pill: 9999px;
+
+  /* Elevation Shadows */
+  --rt-shadow-sm: 0 2px 8px rgba(38, 43, 17, 0.05);
+  --rt-shadow-md: 0 4px 16px rgba(38, 43, 17, 0.08);
+  --rt-shadow-lg: 0 12px 32px rgba(38, 43, 17, 0.12);
+
+  /* Grid & Dimensions */
+  --rt-container-max: 1240px;
+  --rt-gutter: 24px;
+  --rt-header-height: 84px;
+  --rt-topbar-height: 38px;
+}
