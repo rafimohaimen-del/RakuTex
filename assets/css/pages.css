@@ -955,8 +955,8 @@
   background-color: #57622A;
   background-image: url('../images/bg.png');
   background-repeat: no-repeat;
-  background-position: right clamp(-60px, -2vw, 20px) center;
-  background-size: clamp(460px, 45vw, 680px) auto;
+  background-position: right clamp(-20px, 1vw, 50px) center;
+  background-size: clamp(540px, 52vw, 820px) auto;
   color: var(--rt-white);
   padding: clamp(72px, 9vw, 120px) 0;
   position: relative;
