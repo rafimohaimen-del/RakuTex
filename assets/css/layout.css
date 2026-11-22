@@ -78,6 +78,37 @@
   align-items: center;
   gap: 14px;
   text-decoration: none;
+  line-height: 1;
+}
+
+.site-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 220px;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.site-logo:hover .site-logo-img {
+  transform: translateY(-1px);
+}
+
+.drawer-logo-img {
+  height: 38px;
+  width: auto;
+  max-width: 180px;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 200px;
+  display: block;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .logo-icon-svg {
