@@ -76,26 +76,26 @@
   </aside>
 
   <main>
-    <!-- CATEGORY HERO & GALLERY -->
-    <section class="section-pad-sm" style="background-color: var(--rt-paper);">
+    <!-- CATEGORY HERO & GALLERY (matching Design/Product category template — Knitwear-selection.png) -->
+    <section class="category-hero-section">
       <div class="container">
-        <nav class="breadcrumbs" aria-label="Breadcrumb" style="display: flex; gap: 8px; font-size: 0.8125rem; color: var(--rt-stone-500); margin-bottom: 24px;">
-          <a href="index.html">Home</a> <span>/</span> <a href="products.html">Products</a> <span>/</span> <span style="color: var(--rt-text); font-weight: 700;">Knitwear</span>
+        <nav class="category-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <a href="products.html">Products</a> <span>/</span> <span class="category-breadcrumbs-current">Knitwear</span>
         </nav>
 
         <div class="category-hero-grid">
           <div>
-            <div class="flex items-center gap-2" style="margin-bottom: 12px;">
-              <svg style="width: 24px; height: 24px; stroke: var(--rt-olive-500);" viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-knitwear"></use></svg>
-              <span class="eyebrow eyebrow-olive" style="margin-bottom: 0;">KNIT FAMILY</span>
+            <div class="category-hero-eyebrow">
+              <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-knitwear"></use></svg>
+              <span>KNIT FAMILY</span>
             </div>
-            <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px;">Knitwear</h1>
-            <p class="lead-text" style="margin-bottom: 32px;">
+            <h1 class="category-hero-title">Knitwear</h1>
+            <p class="category-hero-lead">
               All sorts of knit tops and bottoms — the backbone of Bangladesh apparel. We match each style to knit specialists in our network, from basic tees to premium polos for the Japanese market.
             </p>
-            <div class="flex gap-4" style="flex-wrap: wrap;">
-              <a href="quote.html?cat=Knitwear" class="btn btn-gold">Request a knitwear quote →</a>
-              <a href="#capabilities" class="btn btn-outline-olive">Capabilities</a>
+            <div class="category-hero-actions">
+              <a href="quote.html?cat=Knitwear" class="category-hero-btn-primary">Request a knitwear quote →</a>
+              <a href="#capabilities" class="category-hero-btn-secondary">Capabilities</a>
             </div>
           </div>
 
@@ -105,15 +105,13 @@
               <svg id="gallery-active-icon" class="gallery-preview-icon" viewBox="0 0 48 48">
                 <use href="assets/icons/icons.svg#icon-knitwear"></use>
               </svg>
-              <span id="gallery-active-caption" class="gallery-preview-caption">
-                Gallery image 1 of 4 — supplied by Raku Tex
-              </span>
+              <span id="gallery-active-caption" class="gallery-preview-caption">Gallery image 1 of 4 — supplied by Raku Tex</span>
             </div>
             <div class="gallery-thumbs-row">
-              <button class="gallery-thumb-btn active" data-caption="Gallery image 1 of 4 — Crew & V-neck Single Jersey">1</button>
-              <button class="gallery-thumb-btn" data-caption="Gallery image 2 of 4 — Premium Piqué Polo Details">2</button>
-              <button class="gallery-thumb-btn" data-caption="Gallery image 3 of 4 — Heavy Slub & French Terry Samples">3</button>
-              <button class="gallery-thumb-btn" data-caption="Gallery image 4 of 4 — Flatlock Stitching & Rib Finishes">4</button>
+              <button class="gallery-thumb-btn active" data-caption="Gallery image 1 of 4 — supplied by Raku Tex">1</button>
+              <button class="gallery-thumb-btn" data-caption="Gallery image 2 of 4 — supplied by Raku Tex">2</button>
+              <button class="gallery-thumb-btn" data-caption="Gallery image 3 of 4 — supplied by Raku Tex">3</button>
+              <button class="gallery-thumb-btn" data-caption="Gallery image 4 of 4 — supplied by Raku Tex">4</button>
             </div>
           </div>
         </div>
@@ -121,9 +119,9 @@
     </section>
 
     <!-- WHAT WE MAKE IN KNIT -->
-    <section class="section-pad-sm" style="background-color: var(--rt-white); border-top: 1px solid var(--rt-line);">
+    <section class="what-we-make-section">
       <div class="container">
-        <h2 style="margin-bottom: 32px;">What we make in <span class="accent-gold" style="color: var(--rt-olive-500);">knit</span></h2>
+        <h2 class="what-we-make-title">What we make in <span class="category-accent-italic">knit</span></h2>
 
         <div class="subcategories-grid">
           <div class="subcategory-item">
@@ -163,15 +161,15 @@
     </section>
 
     <!-- SPEC TABLE (FABRICS & CAPABILITIES) -->
-    <section class="section-pad" id="capabilities" style="background-color: var(--rt-paper);">
+    <section class="spec-capabilities-section" id="capabilities">
       <div class="container">
-        <div class="grid" style="grid-template-columns: 1fr 1.6fr; gap: 48px; align-items: start;">
+        <div class="spec-capabilities-grid">
           <div>
-            <span class="eyebrow eyebrow-olive">CAPABILITIES</span>
-            <h2 style="margin-bottom: 16px;">
-              Fabrics, finishes and <span class="accent-gold" style="color: var(--rt-olive-500);">certified options.</span>
+            <span class="spec-eyebrow">CAPABILITIES</span>
+            <h2 class="spec-title">
+              Fabrics, finishes and <span class="category-accent-italic">certified options.</span>
             </h2>
-            <p style="font-size: 0.9375rem; color: var(--rt-text-muted); line-height: 1.6;">
+            <p class="spec-lead">
               The table is indicative. Your tech pack decides the final construction — we guide you if you need it.
             </p>
           </div>
@@ -209,75 +207,81 @@
     </section>
 
     <!-- QUALITY CHECKPOINTS -->
-    <section class="section-pad" style="background-color: var(--rt-surface-deep); color: var(--rt-white);">
+    <section class="category-checkpoints-section">
       <div class="container">
-        <span class="eyebrow eyebrow-gold">QUALITY CHECKPOINTS</span>
-        <h2 style="color: var(--rt-white); margin-bottom: 40px;">Where we check your knitwear</h2>
+        <span class="category-checkpoints-eyebrow">QUALITY CHECKPOINTS</span>
+        <h2 class="category-checkpoints-title">Where we check your knitwear</h2>
 
-        <div class="checkpoints-grid">
-          <div class="checkpoint-card">
-            <div class="checkpoint-num">01</div>
-            <h4 class="checkpoint-title" style="color: var(--rt-white);">Yarn & fabric</h4>
-            <p class="checkpoint-desc" style="color: var(--rt-olive-200);">Composition, GSM, shrinkage and colour fastness</p>
+        <div class="category-checkpoints-grid">
+          <div class="category-checkpoint-item">
+            <div class="category-checkpoint-num">01</div>
+            <h4 class="category-checkpoint-title">Yarn & fabric</h4>
+            <p class="category-checkpoint-desc">Composition, GSM, shrinkage and colour fastness</p>
           </div>
 
-          <div class="checkpoint-card">
-            <div class="checkpoint-num">02</div>
-            <h4 class="checkpoint-title" style="color: var(--rt-white);">Cutting & print</h4>
-            <p class="checkpoint-desc" style="color: var(--rt-olive-200);">Pattern accuracy, panel shading, print and embroidery approval</p>
+          <div class="category-checkpoint-item">
+            <div class="category-checkpoint-num">02</div>
+            <h4 class="category-checkpoint-title">Cutting & print</h4>
+            <p class="category-checkpoint-desc">Pattern accuracy, panel shading, print and embroidery approval</p>
           </div>
 
-          <div class="checkpoint-card">
-            <div class="checkpoint-num">03</div>
-            <h4 class="checkpoint-title" style="color: var(--rt-white);">Inline sewing</h4>
-            <p class="checkpoint-desc" style="color: var(--rt-olive-200);">Seams, stitch density and measurements during production</p>
+          <div class="category-checkpoint-item">
+            <div class="category-checkpoint-num">03</div>
+            <h4 class="category-checkpoint-title">Inline sewing</h4>
+            <p class="category-checkpoint-desc">Seams, stitch density and measurements during production</p>
           </div>
 
-          <div class="checkpoint-card">
-            <div class="checkpoint-num">04</div>
-            <h4 class="checkpoint-title" style="color: var(--rt-white);">Finishing</h4>
-            <p class="checkpoint-desc" style="color: var(--rt-olive-200);">Pressing, labelling, folding and packing to your manual</p>
+          <div class="category-checkpoint-item">
+            <div class="category-checkpoint-num">04</div>
+            <h4 class="category-checkpoint-title">Finishing</h4>
+            <p class="category-checkpoint-desc">Pressing, labelling, folding and packing to your manual</p>
           </div>
 
-          <div class="checkpoint-card">
-            <div class="checkpoint-num">05</div>
-            <h4 class="checkpoint-title" style="color: var(--rt-white);">Final inspection</h4>
-            <p class="checkpoint-desc" style="color: var(--rt-olive-200);">Final audit before shipment — 100% inspection on request</p>
+          <div class="category-checkpoint-item">
+            <div class="category-checkpoint-num">05</div>
+            <h4 class="category-checkpoint-title">Final inspection</h4>
+            <p class="category-checkpoint-desc">Final audit before shipment — 100% inspection on request</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- RELATED CATEGORIES -->
-    <section class="section-pad-sm" style="background-color: var(--rt-white);">
+    <section class="category-related-section">
       <div class="container">
-        <div class="flex items-center justify-between" style="margin-bottom: 24px;">
-          <h3>Related categories</h3>
-          <a href="products.html" class="text-link">All products <span>→</span></a>
+        <div class="category-related-header">
+          <h3 class="category-related-title">Related categories</h3>
+          <a href="products.html" class="category-related-all-link">All products <span>→</span></a>
         </div>
 
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-          <a href="products.html" class="pillar-card flex items-center gap-4">
-            <svg style="width: 36px; height: 36px; stroke: var(--rt-olive-500);" viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-heavy-knit"></use></svg>
+        <div class="category-related-grid">
+          <a href="products.html" class="category-related-card">
+            <div class="category-related-icon-wrap">
+              <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-heavy-knit"></use></svg>
+            </div>
             <div>
-              <h4 style="font-size: 1.1rem; margin-bottom: 2px;">Heavy knit</h4>
-              <p style="font-size: 0.8125rem; color: var(--rt-text-muted);">Hoodies, sweatshirts, joggers</p>
+              <h4 class="category-related-card-title">Heavy knit</h4>
+              <p class="category-related-card-desc">Hoodies, sweatshirts, joggers</p>
             </div>
           </a>
 
-          <a href="products.html" class="pillar-card flex items-center gap-4">
-            <svg style="width: 36px; height: 36px; stroke: var(--rt-olive-500);" viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-activewear"></use></svg>
+          <a href="products.html" class="category-related-card">
+            <div class="category-related-icon-wrap">
+              <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-activewear"></use></svg>
+            </div>
             <div>
-              <h4 style="font-size: 1.1rem; margin-bottom: 2px;">Activewear</h4>
-              <p style="font-size: 0.8125rem; color: var(--rt-text-muted);">Track suits, sports tees, leggings</p>
+              <h4 class="category-related-card-title">Activewear</h4>
+              <p class="category-related-card-desc">Track suits, sports tees, leggings</p>
             </div>
           </a>
 
-          <a href="products.html" class="pillar-card flex items-center gap-4">
-            <svg style="width: 36px; height: 36px; stroke: var(--rt-olive-500);" viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-sweaters"></use></svg>
+          <a href="products.html" class="category-related-card">
+            <div class="category-related-icon-wrap">
+              <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-sweaters"></use></svg>
+            </div>
             <div>
-              <h4 style="font-size: 1.1rem; margin-bottom: 2px;">Sweaters</h4>
-              <p style="font-size: 0.8125rem; color: var(--rt-text-muted);">Pullovers, cardigans, vests</p>
+              <h4 class="category-related-card-title">Sweaters</h4>
+              <p class="category-related-card-desc">Pullovers, cardigans, vests</p>
             </div>
           </a>
         </div>
@@ -285,17 +289,14 @@
     </section>
 
     <!-- CTA BAND -->
-    <section class="cta-band">
+    <section class="category-cta-band">
       <div class="container">
-        <div class="cta-band-content">
-          <h2 class="cta-band-title">Planning a knit programme? <em>Send the tech pack.</em></h2>
-          <p class="cta-band-text">
-            We will check fabric availability, suggest yarn blends, and calculate target costing for your review.
-          </p>
-        </div>
-        <div class="cta-band-actions">
-          <a href="quote.html" class="cta-btn-dark">Request a quote →</a>
-          <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="cta-btn-outline">WhatsApp us</a>
+        <div class="category-cta-container">
+          <h2 class="category-cta-title">Planning a knit programme?<br><em>Send the tech pack.</em></h2>
+          <div class="category-cta-actions">
+            <a href="quote.html" class="category-cta-btn-dark">Request a quote →</a>
+            <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="category-cta-btn-outline">WhatsApp us</a>
+          </div>
         </div>
       </div>
     </section>
