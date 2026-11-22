@@ -2230,8 +2230,18 @@
 .categories-mobile-scrollbar,
 .categories-mobile-view-all-btn,
 .services-mobile-cta-btn,
-.home-quality-link {
+.home-quality-link,
+.home-quality-title-mobile {
   display: none;
+}
+
+.home-quality-title-desktop {
+  display: inline;
+}
+
+.home-quality-section .chips-group .badge-pill {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--rt-white);
 }
 
 /* ==========================================================================
@@ -2674,27 +2684,88 @@
     margin: 0;
   }
 
-  /* 9. Quality & Compliance Section */
+  /* 9. Quality & Compliance Section (matching Design/quality.png) */
   .home-quality-section {
-    padding: 44px 0;
-    background-color: #1E240E;
+    padding: 48px 0;
+    background-color: #262B11 !important;
+  }
+  .home-quality-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+  .home-quality-section .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #CF9E29;
+    margin-bottom: 14px;
+    display: block;
   }
   .home-quality-title {
-    font-size: 1.75rem;
-    margin-bottom: 18px;
+    font-size: 1.875rem;
+    line-height: 1.18;
+    margin-bottom: 24px !important;
+    color: #FFFFFF;
+  }
+  .home-quality-title-desktop {
+    display: none !important;
+  }
+  .home-quality-title-mobile {
+    display: block !important;
+    font-family: var(--rt-font-heading);
+    color: #FFFFFF;
+  }
+  .home-quality-title-mobile .accent-gold {
+    font-style: italic;
+    font-weight: 400;
+    color: #CF9E29;
   }
   .home-quality-desc {
-    display: none;
+    display: none !important;
   }
   .home-quality-desktop-btn {
-    display: none;
+    display: none !important;
+  }
+  .home-quality-sublabel {
+    display: none !important;
+  }
+  .home-quality-footnote {
+    display: none !important;
+  }
+  .home-quality-section .chips-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px 8px !important;
+    margin: 0 !important;
+  }
+  .home-quality-section .chips-group .badge-pill {
+    background: transparent !important;
+    border: 1px solid #705E1C !important;
+    color: #FFFFFF !important;
+    font-family: var(--rt-font-sans) !important;
+    font-size: 0.8125rem !important;
+    font-weight: 700 !important;
+    padding: 7px 15px !important;
+    border-radius: 9999px !important;
+    line-height: 1 !important;
+    letter-spacing: 0.02em !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .home-quality-link {
-    display: inline-flex;
-    margin-top: 20px;
-    color: #E0B038;
-    font-weight: 600;
-    font-size: 0.875rem;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    margin-top: 24px !important;
+    color: #DBA82B !important;
+    font-weight: 600 !important;
+    font-size: 0.9375rem !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease;
+  }
+  .home-quality-link:hover {
+    color: #EEAE2E !important;
   }
 
   /* 10. Leadership Section */
