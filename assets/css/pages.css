@@ -136,7 +136,6 @@
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
-}
 
 .inspection-badge-icon {
   width: 24px;
@@ -621,13 +620,13 @@
 
 .category-breadcrumbs a {
   color: #7C836E;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   transition: color 0.2s ease;
 }
 
 .category-breadcrumbs a:hover {
   color: #384218;
-  text-decoration: underline;
 }
 
 .category-breadcrumbs-current {
