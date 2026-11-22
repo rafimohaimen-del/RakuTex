@@ -92,305 +92,308 @@
       </div>
     </section>
 
-    <!-- CATALOGUE & FILTER SECTION -->
-    <section class="section-pad" style="background-color: var(--rt-paper);">
+    <!-- CATALOGUE & FILTER SECTION (matching Design/catalogue.png) -->
+    <section class="catalogue-section">
       <div class="container">
-        <!-- Filter Controls Bar -->
-        <div class="flex items-center justify-between" style="gap: 20px; flex-wrap: wrap; margin-bottom: 24px;">
-          <div class="flex gap-2" style="flex-wrap: wrap;">
-            <button class="filter-tab-pill product-filter-btn active" data-filter="all">All 10</button>
-            <button class="filter-tab-pill product-filter-btn" data-filter="knit">Knit 3</button>
-            <button class="filter-tab-pill product-filter-btn" data-filter="woven">Woven 3</button>
-            <button class="filter-tab-pill product-filter-btn" data-filter="sweater">Sweater 1</button>
-            <button class="filter-tab-pill product-filter-btn" data-filter="lifestyle">Lifestyle 3</button>
+        <!-- Filter Controls & Search Bar -->
+        <div class="catalogue-toolbar">
+          <div class="catalogue-filter-group">
+            <button class="catalogue-filter-btn product-filter-btn active" data-filter="all">All 10</button>
+            <button class="catalogue-filter-btn product-filter-btn" data-filter="knit">Knit 3</button>
+            <button class="catalogue-filter-btn product-filter-btn" data-filter="woven">Woven 3</button>
+            <button class="catalogue-filter-btn product-filter-btn" data-filter="sweater">Sweater 1</button>
+            <button class="catalogue-filter-btn product-filter-btn" data-filter="lifestyle">Lifestyle 3</button>
           </div>
 
-          <div style="min-width: 260px; max-width: 360px; width: 100%;">
-            <input type="text" id="product-search-input" class="form-input" placeholder="Search products, e.g. hoodie, polo, towel" aria-label="Search product catalogue">
+          <div class="catalogue-search-wrap">
+            <label for="product-search-input" class="catalogue-search-label">Search products</label>
+            <input type="text" id="product-search-input" class="catalogue-search-input form-input" placeholder="e.g. hoodie, polo, towel" aria-label="Search product catalogue">
           </div>
         </div>
 
         <!-- Count indicator -->
-        <div id="product-count-display" style="font-size: 0.875rem; color: var(--rt-stone-500); margin-bottom: 24px;">
+        <div id="product-count-display" class="catalogue-count">
           Showing 10 of 10 categories
         </div>
 
-        <!-- Product Cards Grid -->
-        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;">
+        <!-- Product Cards Grid (3 columns desktop) -->
+        <div class="catalogue-grid">
           <!-- 1. Knitwear -->
-          <article class="product-card product-grid-item" data-category="knit" data-keywords="t-shirt polo tank tops leggings sleepwear single jersey pique rib interlock slub">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">KNIT</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="knit" data-keywords="t-shirt polo tank tops leggings sleepwear single jersey pique rib interlock slub">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">KNIT</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-knitwear"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-knitwear"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Knitwear</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">T-shirts</span>
+                <span class="catalogue-tag-pill">Polo shirts</span>
+                <span class="catalogue-tag-pill">Tank tops</span>
+                <span class="catalogue-tag-pill">Leggings</span>
+                <span class="catalogue-tag-pill">Sleepwear</span>
               </div>
-              <h3 class="product-card-title">Knitwear</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">T-shirts</span>
-                <span class="badge-tag">Polo shirts</span>
-                <span class="badge-tag">Tank tops</span>
-                <span class="badge-tag">Leggings</span>
-                <span class="badge-tag">Sleepwear</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> single jersey, piqué, rib, interlock, slub
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 2. Heavy knit -->
-          <article class="product-card product-grid-item" data-category="knit" data-keywords="hoodies sweatshirts joggers zip-throughs fleece french terry brushed back waffle">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">KNIT</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="knit" data-keywords="hoodies sweatshirts joggers zip-throughs fleece french terry brushed back waffle">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">KNIT</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-heavy-knit"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-heavy-knit"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Heavy knit</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Hoodies</span>
+                <span class="catalogue-tag-pill">Sweatshirts</span>
+                <span class="catalogue-tag-pill">Joggers</span>
+                <span class="catalogue-tag-pill">Zip-throughs</span>
               </div>
-              <h3 class="product-card-title">Heavy knit</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Hoodies</span>
-                <span class="badge-tag">Sweatshirts</span>
-                <span class="badge-tag">Joggers</span>
-                <span class="badge-tag">Zip-throughs</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> fleece, French terry, brushed back, waffle
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 3. Activewear -->
-          <article class="product-card product-grid-item" data-category="knit" data-keywords="track suits sports tees leggings shorts poly-spandex mesh moisture-wicking">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">KNIT</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="knit" data-keywords="track suits sports tees leggings shorts poly-spandex mesh moisture-wicking">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">KNIT</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-activewear"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-activewear"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Activewear</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Track suits</span>
+                <span class="catalogue-tag-pill">Sports tees</span>
+                <span class="catalogue-tag-pill">Leggings</span>
+                <span class="catalogue-tag-pill">Shorts</span>
               </div>
-              <h3 class="product-card-title">Activewear</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Track suits</span>
-                <span class="badge-tag">Sports tees</span>
-                <span class="badge-tag">Leggings</span>
-                <span class="badge-tag">Shorts</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> poly-spandex, mesh, moisture-wicking knits
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 4. Woven -->
-          <article class="product-card product-grid-item" data-category="woven" data-keywords="formal casual shirts trousers chinos dresses poplin oxford twill linen viscose">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">WOVEN</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="woven" data-keywords="formal casual shirts trousers chinos dresses poplin oxford twill linen viscose">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">WOVEN</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-woven"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-woven"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Woven</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Formal shirts</span>
+                <span class="catalogue-tag-pill">Casual shirts</span>
+                <span class="catalogue-tag-pill">Trousers</span>
+                <span class="catalogue-tag-pill">Chinos</span>
+                <span class="catalogue-tag-pill">Dresses</span>
               </div>
-              <h3 class="product-card-title">Woven</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Formal shirts</span>
-                <span class="badge-tag">Casual shirts</span>
-                <span class="badge-tag">Trousers</span>
-                <span class="badge-tag">Chinos</span>
-                <span class="badge-tag">Dresses</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> poplin, oxford, twill, linen, viscose
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 5. Denim -->
-          <article class="product-card product-grid-item" data-category="woven" data-keywords="jeans jackets shirts skirts shorts rigid stretch washed finishes">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">WOVEN</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="woven" data-keywords="jeans jackets shirts skirts shorts rigid stretch washed finishes">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">WOVEN</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-denim"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-denim"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Denim</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Jeans</span>
+                <span class="catalogue-tag-pill">Jackets</span>
+                <span class="catalogue-tag-pill">Shirts</span>
+                <span class="catalogue-tag-pill">Skirts</span>
+                <span class="catalogue-tag-pill">Shorts</span>
               </div>
-              <h3 class="product-card-title">Denim</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Jeans</span>
-                <span class="badge-tag">Jackets</span>
-                <span class="badge-tag">Shirts</span>
-                <span class="badge-tag">Skirts</span>
-                <span class="badge-tag">Shorts</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> rigid and stretch denim, washed finishes
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 6. Outerwear -->
-          <article class="product-card product-grid-item" data-category="woven" data-keywords="jackets coats parkas gilets windbreakers nylon polyester cotton twill padded quilted">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">WOVEN</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="woven" data-keywords="jackets coats parkas gilets windbreakers nylon polyester cotton twill padded quilted">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">WOVEN</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-outerwear"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-outerwear"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Outerwear</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Jackets</span>
+                <span class="catalogue-tag-pill">Coats</span>
+                <span class="catalogue-tag-pill">Parkas</span>
+                <span class="catalogue-tag-pill">Gilets</span>
+                <span class="catalogue-tag-pill">Windbreakers</span>
               </div>
-              <h3 class="product-card-title">Outerwear</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Jackets</span>
-                <span class="badge-tag">Coats</span>
-                <span class="badge-tag">Parkas</span>
-                <span class="badge-tag">Gilets</span>
-                <span class="badge-tag">Windbreakers</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> nylon, polyester, cotton twill, padded and quilted
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 7. Sweaters -->
-          <article class="product-card product-grid-item" data-category="sweater" data-keywords="pullovers cardigans vests knit dresses cotton acrylic wool-blend yarns flat knit">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">SWEATER</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="sweater" data-keywords="pullovers cardigans vests knit dresses cotton acrylic wool-blend yarns flat knit">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">SWEATER</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-sweaters"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-sweaters"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Sweaters</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Pullovers</span>
+                <span class="catalogue-tag-pill">Cardigans</span>
+                <span class="catalogue-tag-pill">Vests</span>
+                <span class="catalogue-tag-pill">Knit dresses</span>
               </div>
-              <h3 class="product-card-title">Sweaters</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Pullovers</span>
-                <span class="badge-tag">Cardigans</span>
-                <span class="badge-tag">Vests</span>
-                <span class="badge-tag">Knit dresses</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> cotton, acrylic and wool-blend yarns, fine to chunky gauges
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 8. Lingerie -->
-          <article class="product-card product-grid-item" data-category="lifestyle" data-keywords="bras briefs boxers loungewear cotton-spandex lace microfibre">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">LIFESTYLE</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="lifestyle" data-keywords="bras briefs boxers loungewear cotton-spandex lace microfibre">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">LIFESTYLE</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-lingerie"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-lingerie"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Lingerie</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Bras</span>
+                <span class="catalogue-tag-pill">Briefs</span>
+                <span class="catalogue-tag-pill">Boxers</span>
+                <span class="catalogue-tag-pill">Loungewear</span>
               </div>
-              <h3 class="product-card-title">Lingerie</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Bras</span>
-                <span class="badge-tag">Briefs</span>
-                <span class="badge-tag">Boxers</span>
-                <span class="badge-tag">Loungewear</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> cotton-spandex, lace, microfibre
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 9. Accessories -->
-          <article class="product-card product-grid-item" data-category="lifestyle" data-keywords="tote bags denim bags belts pouches canvas denim woven fabrics">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">LIFESTYLE</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="lifestyle" data-keywords="tote bags denim bags belts pouches canvas denim woven fabrics">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">LIFESTYLE</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-accessories"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-accessories"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Accessories</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Tote bags</span>
+                <span class="catalogue-tag-pill">Denim bags</span>
+                <span class="catalogue-tag-pill">Belts</span>
+                <span class="catalogue-tag-pill">Pouches</span>
               </div>
-              <h3 class="product-card-title">Accessories</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Tote bags</span>
-                <span class="badge-tag">Denim bags</span>
-                <span class="badge-tag">Belts</span>
-                <span class="badge-tag">Pouches</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> canvas, denim, woven fabrics
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
 
           <!-- 10. Home textiles -->
-          <article class="product-card product-grid-item" data-category="lifestyle" data-keywords="towels bed linen kitchen textiles cushion covers terry cotton percale linen">
-            <div>
-              <div class="flex items-center justify-between" style="margin-bottom: 16px;">
-                <span class="badge-tag" style="background-color: var(--rt-olive-50); color: var(--rt-olive-500); font-weight: 700;">LIFESTYLE</span>
-                <span style="font-size: 0.75rem; color: var(--rt-stone-300);">Photo slot</span>
+          <article class="catalogue-card product-card product-grid-item" data-category="lifestyle" data-keywords="towels bed linen kitchen textiles cushion covers terry cotton percale linen">
+            <div class="catalogue-card-media">
+              <span class="catalogue-card-badge">LIFESTYLE</span>
+              <span class="catalogue-card-slot-label">Photo slot</span>
+              <div class="catalogue-card-illustration">
+                <svg viewBox="0 0 48 48"><use href="assets/icons/icons.svg#icon-home-textiles"></use></svg>
               </div>
-              <div class="card-icon-wrap" style="height: 100px;">
-                <svg viewBox="0 0 48 48" style="width: 72px; height: 72px;"><use href="assets/icons/icons.svg#icon-home-textiles"></use></svg>
+            </div>
+            <div class="catalogue-card-body">
+              <h3 class="catalogue-card-title product-card-title">Home textiles</h3>
+              <div class="catalogue-tags">
+                <span class="catalogue-tag-pill">Towels</span>
+                <span class="catalogue-tag-pill">Bed linen</span>
+                <span class="catalogue-tag-pill">Kitchen textiles</span>
+                <span class="catalogue-tag-pill">Cushion covers</span>
               </div>
-              <h3 class="product-card-title">Home textiles</h3>
-              <div class="product-tag-list">
-                <span class="badge-tag">Towels</span>
-                <span class="badge-tag">Bed linen</span>
-                <span class="badge-tag">Kitchen textiles</span>
-                <span class="badge-tag">Cushion covers</span>
-              </div>
-              <p class="product-fabric-meta">
+              <p class="catalogue-fabric-meta">
                 <strong>Typical fabrics:</strong> terry, cotton percale, linen
               </p>
             </div>
-            <div class="product-card-footer">
-              <a href="category-knitwear.html" class="text-link">Details <span>→</span></a>
-              <a href="quote.html" class="btn btn-dark btn-sm">Inquire →</a>
+            <div class="catalogue-card-footer">
+              <a href="category-knitwear.html" class="catalogue-details-link">Details <span>→</span></a>
+              <a href="quote.html" class="catalogue-inquire-btn">Inquire →</a>
             </div>
           </article>
         </div>
+      </div>
+    </section>
       </div>
     </section>
 
