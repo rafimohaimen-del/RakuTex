@@ -299,84 +299,108 @@
     <!-- VISION 2030 ROADMAP -->
     <section class="section-pad" style="background-color: var(--rt-white); border-top: 1px solid var(--rt-line);">
       <div class="container">
-        <div class="flex items-center justify-between" style="flex-wrap: wrap; gap: 16px;">
+        <div class="vision-header">
           <div>
             <span class="eyebrow eyebrow-olive">VISION 2030</span>
-            <h2>Where we’re going — <span class="accent-gold" style="color: var(--rt-olive-500);">and who comes with us.</span></h2>
+            <h2 class="vision-title">
+              Where we’re going – <em>and who comes<br>with us.</em>
+            </h2>
           </div>
-          <div style="font-family: var(--rt-font-label); font-weight: 700; font-size: 1.15rem; color: var(--rt-olive-500);">
-            Goal: $30M business by 2030
+          <div class="vision-goal-badge">
+            <span class="vision-goal-prefix">Goal:</span>
+            <strong class="vision-goal-amount">$30M</strong>
+            <span class="vision-goal-suffix">business by 2030</span>
           </div>
         </div>
 
-        <div class="timeline-track">
-          <!-- 2024 -->
-          <div class="timeline-node highlight">
-            <div class="timeline-dot">🏁</div>
-            <div>
-              <div class="timeline-year">2024</div>
-              <div class="timeline-title">Start</div>
-              <div class="timeline-desc">Raku Tex founded with a vision for sustained growth.</div>
+        <div class="vision-timeline-wrapper">
+          <div class="vision-timeline-track">
+            <!-- 2024 -->
+            <div class="vision-milestone done">
+              <div class="vision-marker" aria-hidden="true"></div>
+              <div class="vision-year">2024</div>
+              <svg class="vision-milestone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                <line x1="4" y1="22" x2="4" y2="15"/>
+              </svg>
+              <h3 class="vision-milestone-title">Start</h3>
+              <p class="vision-milestone-desc">Raku Tex founded with a vision for sustained growth.</p>
             </div>
-          </div>
 
-          <!-- 2025 -->
-          <div class="timeline-node">
-            <div class="timeline-dot">👥</div>
-            <div>
-              <div class="timeline-year">2025</div>
-              <div class="timeline-title">Employee education</div>
-              <div class="timeline-desc">Internal training in language, business ethics and personal development.</div>
+            <!-- 2025 -->
+            <div class="vision-milestone done">
+              <div class="vision-marker" aria-hidden="true"></div>
+              <div class="vision-year">2025</div>
+              <svg class="vision-milestone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              <h3 class="vision-milestone-title">Employee education</h3>
+              <p class="vision-milestone-desc">Internal training in language, business ethics and personal development.</p>
             </div>
-          </div>
 
-          <!-- 2026 -->
-          <div class="timeline-node highlight">
-            <div class="timeline-dot">🎓</div>
-            <div>
-              <div class="timeline-year">2026</div>
-              <div class="timeline-title">Children's education</div>
-              <div class="timeline-desc">Financial aid for the education of workers' children.</div>
+            <!-- 2026 -->
+            <div class="vision-milestone current">
+              <div class="vision-marker" aria-hidden="true"></div>
+              <div class="vision-year">2026</div>
+              <svg class="vision-milestone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <h3 class="vision-milestone-title">Children’s education</h3>
+              <p class="vision-milestone-desc">Financial aid for the education of workers’ children.</p>
             </div>
-          </div>
 
-          <!-- 2027 -->
-          <div class="timeline-node">
-            <div class="timeline-dot">🏫</div>
-            <div>
-              <div class="timeline-year">2027</div>
-              <div class="timeline-title">Training institute</div>
-              <div class="timeline-desc">Developing mid-level managers for the RMG sector.</div>
+            <!-- 2027 -->
+            <div class="vision-milestone">
+              <div class="vision-marker" aria-hidden="true"></div>
+              <div class="vision-year">2027</div>
+              <svg class="vision-milestone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <h3 class="vision-milestone-title">Training institute</h3>
+              <p class="vision-milestone-desc">Developing mid-level managers for the RMG sector.</p>
             </div>
-          </div>
 
-          <!-- 2028 -->
-          <div class="timeline-node">
-            <div class="timeline-dot">🌐</div>
-            <div>
-              <div class="timeline-year">2028</div>
-              <div class="timeline-title">Japan office</div>
-              <div class="timeline-desc">Closer to our customers, for better service.</div>
+            <!-- 2028 -->
+            <div class="vision-milestone">
+              <div class="vision-marker" aria-hidden="true"></div>
+              <div class="vision-year">2028</div>
+              <svg class="vision-milestone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <h3 class="vision-milestone-title">Japan office</h3>
+              <p class="vision-milestone-desc">Closer to our customers, for better service.</p>
             </div>
-          </div>
 
-          <!-- 2029 -->
-          <div class="timeline-node">
-            <div class="timeline-dot">🌿</div>
-            <div>
-              <div class="timeline-year">2029</div>
-              <div class="timeline-title">Green factory</div>
-              <div class="timeline-desc">Our own factory, built on sustainable approaches.</div>
+            <!-- 2029 -->
+            <div class="vision-milestone">
+              <div class="vision-marker" aria-hidden="true"></div>
+              <div class="vision-year">2029</div>
+              <svg class="vision-milestone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 21 2c-.5 5-1.5 7.5-3.1 11.2A7 7 0 0 1 11 20z"/>
+                <path d="M2 21c0-3 1.8-6 5.5-8"/>
+              </svg>
+              <h3 class="vision-milestone-title">Green factory</h3>
+              <p class="vision-milestone-desc">Our own factory, built on sustainable approaches.</p>
             </div>
-          </div>
 
-          <!-- 2030 -->
-          <div class="timeline-node highlight">
-            <div class="timeline-dot">🎯</div>
-            <div>
-              <div class="timeline-year">2030</div>
-              <div class="timeline-title">$30M business</div>
-              <div class="timeline-desc">The milestone our growth plan is built towards.</div>
+            <!-- 2030 -->
+            <div class="vision-milestone">
+              <div class="vision-marker" aria-hidden="true"></div>
+              <div class="vision-year">2030</div>
+              <svg class="vision-milestone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+              <h3 class="vision-milestone-title">$30M business</h3>
+              <p class="vision-milestone-desc">The milestone our growth plan is built towards.</p>
             </div>
           </div>
         </div>
