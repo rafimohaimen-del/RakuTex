@@ -1210,77 +1210,156 @@
 }
 
 /* ==========================================================================
-   SUSTAINABILITY MATRIX
+   SUSTAINABILITY CERTIFICATION DIRECTORY
+   matching Design/Sustainability-component.png
    ========================================================================== */
+.cert-directory-section {
+  background-color: #FFFFFF;
+  padding: clamp(56px, 7vw, 88px) 0;
+}
+
+.cert-directory-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6C745E;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.cert-directory-title {
+  font-family: var(--rt-font-heading);
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  font-weight: 600;
+  color: #1E2310;
+  line-height: 1.15;
+  margin: 0 0 16px 0;
+}
+
+.cert-directory-accent {
+  font-family: var(--rt-font-heading);
+  font-style: italic;
+  font-weight: 400;
+  color: #57622A;
+}
+
+.cert-directory-desc {
+  font-size: 0.9375rem;
+  color: #5E6652;
+  line-height: 1.5;
+  margin: 0 0 28px 0;
+  max-width: 680px;
+}
+
 .filter-tabs-row {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
 .filter-tab-pill {
-  padding: 8px 18px;
-  background-color: var(--rt-surface);
-  border: 1px solid var(--rt-line);
-  border-radius: var(--rt-radius-pill);
-  font-weight: 700;
+  padding: 8px 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #DCE0D0;
+  border-radius: 9999px;
+  font-weight: 600;
   font-size: 0.875rem;
-  color: var(--rt-stone-700);
+  color: #2D3318;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-tab-pill:hover {
-  border-color: var(--rt-olive-400);
+  background-color: #F0F2E8;
+  border-color: #BFC6AD;
+  color: #1E2310;
 }
 
 .filter-tab-pill.active {
-  background-color: var(--rt-surface-deep);
-  color: var(--rt-white);
-  border-color: var(--rt-surface-deep);
+  background-color: #384218;
+  color: #FFFFFF;
+  border-color: #384218;
 }
 
 .standards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .cert-card {
-  background-color: var(--rt-surface);
-  border: 1px solid var(--rt-line);
-  border-radius: 12px;
-  padding: 20px;
+  background-color: #FAFBF7;
+  border: 1px solid #E4E8DC;
+  border-radius: 14px;
+  padding: 22px 22px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.25s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cert-card:hover {
-  border-color: var(--rt-olive-300);
   transform: translateY(-2px);
-  box-shadow: var(--rt-shadow-sm);
+  border-color: #BFC6AE;
+  box-shadow: 0 6px 16px rgba(40, 50, 20, 0.05);
 }
 
 .cert-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .cert-code {
-  font-family: var(--rt-font-body);
-  font-weight: 900;
   font-size: 1.15rem;
+  font-weight: 700;
+  color: #1E2310;
+  line-height: 1.2;
+}
+
+.cert-badge {
+  background-color: #FAFBF6;
+  border: 1px solid #DFE3D5;
+  color: #58614B;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  white-space: nowrap;
 }
 
 .cert-desc {
   font-size: 0.8125rem;
-  color: var(--rt-text-muted);
+  color: #58604C;
   line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .standards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .standards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .standards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
 
 /* ==========================================================================
