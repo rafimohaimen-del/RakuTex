@@ -2843,19 +2843,6 @@
   .cta-band-actions {
     display: none;
   }
-
-  /* 12. Footer */
-  .site-footer {
-    padding-bottom: 24px;
-    background-color: #1E2410;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  .footer-watermark {
-    display: none;
-  }
 }
 
 /* 13. Mobile Sticky Bottom Action Bar */
