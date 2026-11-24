@@ -2818,17 +2818,103 @@
 .categories-mobile-view-all-btn,
 .services-mobile-cta-btn,
 .home-quality-link,
-.home-quality-title-mobile {
+.home-quality-title-mobile,
+.work-model-title-mobile,
+.desc-mobile {
   display: none;
 }
 
-.home-quality-title-desktop {
+.home-quality-title-desktop,
+.work-model-title-desktop,
+.desc-desktop {
   display: inline;
 }
 
 .home-quality-section .chips-group .badge-pill {
   background: rgba(255, 255, 255, 0.08);
   color: var(--rt-white);
+}
+
+/* ==========================================================================
+   HOME PAGE: WORK MODEL 4-PHASE SECTION (DESKTOP)
+   ========================================================================== */
+.home-work-model-section {
+  background-color: var(--rt-paper);
+  padding: 80px 0;
+}
+
+.home-work-model-title {
+  font-family: var(--rt-font-heading);
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: var(--rt-ink);
+  margin-bottom: 36px;
+}
+
+.work-phases-stepper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.work-phase-item {
+  background: var(--rt-surface);
+  border: 1px solid var(--rt-border);
+  border-top: 3px solid var(--rt-gold-500);
+  border-radius: var(--rt-radius-card);
+  padding: 28px 24px;
+  box-shadow: var(--rt-shadow-card);
+  display: flex;
+  flex-direction: column;
+}
+
+.work-phase-num {
+  font-family: var(--rt-font-label);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--rt-gold-500);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.work-phase-title {
+  font-family: var(--rt-font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--rt-ink);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.work-phase-desc {
+  font-family: var(--rt-font-body);
+  font-size: 0.875rem;
+  color: var(--rt-text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.home-work-model-more-link {
+  font-weight: 600;
+  color: var(--rt-olive-600);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.home-work-model-more-link:hover {
+  color: var(--rt-olive-800);
+  transform: translateX(4px);
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .work-phases-stepper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 /* ==========================================================================
@@ -3207,70 +3293,103 @@
     margin-top: 24px;
   }
 
-  /* 8. Work Model (Vertical Stepper) */
+  /* 8. Work Model (Vertical Stepper matching Design/Mobile — Home mockup) */
   .home-work-model-section {
-    padding: 44px 0;
-    background-color: #FFFFFF;
+    padding: 48px 0 56px;
+    background-color: #FAFBF7;
   }
   .home-work-model-title {
-    font-size: 1.75rem;
-    margin-bottom: 28px;
+    font-size: 2.125rem;
+    line-height: 1.15;
+    margin-bottom: 36px;
+    color: #1E2310;
+  }
+  .work-model-title-desktop {
+    display: none;
+  }
+  .work-model-title-mobile {
+    display: block;
+    font-family: var(--rt-font-heading);
+    font-weight: 400;
+  }
+  .desc-desktop {
+    display: none;
+  }
+  .desc-mobile {
+    display: inline;
   }
   .home-work-model-more-link {
     display: none;
   }
-  .work-phases-grid {
+  .work-phases-stepper {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-left: 44px;
-    gap: 24px;
+    gap: 32px;
+    margin-bottom: 0;
+    padding-left: 0;
   }
-  .work-phases-grid::before {
+  /* Continuous vertical guide line passing through center of numbered circles */
+  .work-phases-stepper::before {
     content: '';
     position: absolute;
-    left: 14px;
-    top: 14px;
-    bottom: 24px;
+    top: 22px;
+    bottom: -18px;
+    left: 21px;
     width: 2px;
-    background-color: #DDE2D0;
+    background-color: #CBD5BC;
+    z-index: 1;
   }
   .work-phase-item {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
     background: transparent;
     border: none;
+    border-radius: 0;
     padding: 0;
+    box-shadow: none;
+    position: relative;
+    z-index: 2;
   }
   .work-phase-num {
-    position: absolute;
-    left: -44px;
-    top: 0;
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
     border-radius: 50%;
-    background-color: #475422;
+    background-color: #4D5725;
     color: #FFFFFF;
-    font-family: inherit;
-    font-size: 0.75rem;
+    font-family: var(--rt-font-label, sans-serif);
+    font-size: 0.9375rem;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    margin-bottom: 0;
+    box-shadow: 0 0 0 5px #FAFBF7;
+    position: relative;
+    z-index: 3;
+    letter-spacing: -0.02em;
   }
   .work-phase-num-final {
     background-color: #EEAE2E;
     color: #1E2310;
   }
+  .work-phase-content {
+    flex: 1;
+    padding-top: 4px;
+  }
   .work-phase-title {
-    font-size: 0.9375rem;
+    font-size: 1.1875rem;
     font-weight: 700;
     color: #1E2310;
-    margin-bottom: 4px;
+    line-height: 1.3;
+    margin-bottom: 6px;
   }
   .work-phase-desc {
-    font-size: 0.8125rem;
-    color: #606752;
+    font-size: 0.9375rem;
+    color: #555D46;
     line-height: 1.45;
     margin: 0;
   }
@@ -3499,6 +3618,106 @@
   }
   body:has(.mobile-sticky-bar) .floating-whatsapp {
     display: none;
+  }
+
+  /* Work Model on 768px mobile / tablet viewport */
+  .home-work-model-section {
+    padding: 48px 0 56px;
+    background-color: #FAFBF7;
+  }
+  .home-work-model-title {
+    font-size: 2.125rem;
+    line-height: 1.15;
+    margin-bottom: 36px;
+    color: #1E2310;
+  }
+  .work-model-title-desktop {
+    display: none;
+  }
+  .work-model-title-mobile {
+    display: block;
+    font-family: var(--rt-font-heading);
+    font-weight: 400;
+  }
+  .desc-desktop {
+    display: none;
+  }
+  .desc-mobile {
+    display: inline;
+  }
+  .home-work-model-more-link {
+    display: none;
+  }
+  .work-phases-stepper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 32px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .work-phases-stepper::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    bottom: -18px;
+    left: 21px;
+    width: 2px;
+    background-color: #CBD5BC;
+    z-index: 1;
+  }
+  .work-phase-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+    z-index: 2;
+  }
+  .work-phase-num {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 50%;
+    background-color: #4D5725;
+    color: #FFFFFF;
+    font-family: var(--rt-font-label, sans-serif);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    box-shadow: 0 0 0 5px #FAFBF7;
+    position: relative;
+    z-index: 3;
+    letter-spacing: -0.02em;
+  }
+  .work-phase-num-final {
+    background-color: #EEAE2E;
+    color: #1E2310;
+  }
+  .work-phase-content {
+    flex: 1;
+    padding-top: 4px;
+  }
+  .work-phase-title {
+    font-size: 1.1875rem;
+    font-weight: 700;
+    color: #1E2310;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .work-phase-desc {
+    font-size: 0.9375rem;
+    color: #555D46;
+    line-height: 1.45;
+    margin: 0;
   }
 }
 
