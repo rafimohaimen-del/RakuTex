@@ -100,7 +100,7 @@
           <h2>Use all of them, or only the stage <span class="accent-gold" style="color: var(--rt-olive-500);">you need.</span></h2>
         </div>
 
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div class="grid services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
           <!-- 01 -->
           <div class="service-card">
             <span class="service-card-num">01</span>
@@ -252,12 +252,12 @@
         <!-- Pane 1 -->
         <div class="phase-content-card phase-pane" id="phase-pane-0">
           <div>
-            <div style="font-family: var(--rt-font-label); font-size: 3rem; font-weight: 700; color: var(--rt-gold-500); line-height: 1; margin-bottom: 8px;">01 🔍</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 12px;">Quotation & product development</h3>
-            <p style="color: var(--rt-text-muted); line-height: 1.6; margin-bottom: 24px;">
+            <div class="phase-hero-number">01 🔍</div>
+            <h3 class="phase-hero-title">Quotation & product development</h3>
+            <p class="phase-hero-desc">
               Your inquiry is evaluated against what Bangladesh does best. We select the right supplier from our network, cost the product and plan development.
             </p>
-            <div class="flex gap-3">
+            <div class="phase-actions">
               <button class="btn btn-outline-olive" id="phase-prev-btn" disabled>← Previous</button>
               <button class="btn btn-olive" id="phase-next-btn">Next phase →</button>
             </div>
@@ -273,12 +273,12 @@
         <!-- Pane 2 -->
         <div class="phase-content-card phase-pane" id="phase-pane-1" style="display: none;">
           <div>
-            <div style="font-family: var(--rt-font-label); font-size: 3rem; font-weight: 700; color: var(--rt-gold-500); line-height: 1; margin-bottom: 8px;">02 ⚙️</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 12px;">Risk analysis</h3>
-            <p style="color: var(--rt-text-muted); line-height: 1.6; margin-bottom: 24px;">
+            <div class="phase-hero-number">02 ⚙️</div>
+            <h3 class="phase-hero-title">Risk analysis</h3>
+            <p class="phase-hero-desc">
               We run a comprehensive SWOT analysis across yarns, dyes, manufacturing bottlenecks and buyer lead times to avert delays before cutting.
             </p>
-            <div class="flex gap-3">
+            <div class="phase-actions">
               <button class="btn btn-outline-olive" onclick="document.querySelectorAll('.phase-tab-btn')[0].click()">← Previous</button>
               <button class="btn btn-olive" onclick="document.querySelectorAll('.phase-tab-btn')[2].click()">Next phase →</button>
             </div>
@@ -294,12 +294,12 @@
         <!-- Pane 3 -->
         <div class="phase-content-card phase-pane" id="phase-pane-2" style="display: none;">
           <div>
-            <div style="font-family: var(--rt-font-label); font-size: 3rem; font-weight: 700; color: var(--rt-gold-500); line-height: 1; margin-bottom: 8px;">03 🛡️</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 12px;">Quality management</h3>
-            <p style="color: var(--rt-text-muted); line-height: 1.6; margin-bottom: 24px;">
+            <div class="phase-hero-number">03 🛡️</div>
+            <h3 class="phase-hero-title">Quality management</h3>
+            <p class="phase-hero-desc">
               Supplier aligned and briefed, Time-and-Action (TNA) calendar fixed, quality checkpoints enforced, and testing standards confirmed.
             </p>
-            <div class="flex gap-3">
+            <div class="phase-actions">
               <button class="btn btn-outline-olive" onclick="document.querySelectorAll('.phase-tab-btn')[1].click()">← Previous</button>
               <button class="btn btn-olive" onclick="document.querySelectorAll('.phase-tab-btn')[3].click()">Next phase →</button>
             </div>
@@ -315,14 +315,14 @@
         <!-- Pane 4 -->
         <div class="phase-content-card phase-pane" id="phase-pane-3" style="display: none;">
           <div>
-            <div style="font-family: var(--rt-font-label); font-size: 3rem; font-weight: 700; color: var(--rt-gold-500); line-height: 1; margin-bottom: 8px;">04 🚢</div>
-            <h3 style="font-size: 1.75rem; margin-bottom: 12px;">Product execution</h3>
-            <p style="color: var(--rt-text-muted); line-height: 1.6; margin-bottom: 24px;">
+            <div class="phase-hero-number">04 🚢</div>
+            <h3 class="phase-hero-title">Product execution</h3>
+            <p class="phase-hero-desc">
               Final testing, packed carton inspection, vessel booking, and seamless export documentation delivery.
             </p>
-            <div class="flex gap-3">
+            <div class="phase-actions">
               <button class="btn btn-outline-olive" onclick="document.querySelectorAll('.phase-tab-btn')[2].click()">← Previous</button>
-              <a href="quote.html" class="btn btn-gold">Request your quote →</a>
+              <a href="quote.html" class="btn btn-gold btn-quote-phase">Request your quote →</a>
             </div>
           </div>
           <div class="phase-steps-list">

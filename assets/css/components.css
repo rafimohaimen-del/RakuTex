@@ -523,12 +523,44 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  overflow: hidden;
+}
+
+.phase-hero-number {
+  font-family: var(--rt-font-label);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--rt-gold-500);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.phase-hero-title {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+  line-height: 1.25;
+  color: var(--rt-ink);
+}
+
+.phase-hero-desc {
+  color: var(--rt-text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 0.9375rem;
+}
+
+.phase-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .phase-steps-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  min-width: 0;
 }
 
 .phase-step-item {
@@ -541,6 +573,9 @@
   gap: 16px;
   font-weight: 700;
   font-size: 0.9375rem;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .phase-step-num {
@@ -563,10 +598,75 @@
   }
   .phase-content-card {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .phase-content-card {
+    padding: 24px 16px;
+    gap: 24px;
+    border-radius: 16px;
+  }
+  .phase-hero-number {
+    font-size: 2.25rem;
+  }
+  .phase-hero-title {
+    font-size: 1.375rem;
+  }
+  .phase-hero-desc {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+  .phase-actions {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    width: 100%;
+  }
+  .phase-actions .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 0.9375rem;
+  }
+  .phase-step-item {
+    padding: 12px 14px;
+    gap: 12px;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    align-items: flex-start;
+  }
+  .phase-step-num {
+    margin-top: 1px;
   }
 }
 
 @media (max-width: 540px) {
+  .phase-nav-tabs {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .phase-tab-btn {
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+  .phase-tab-eyebrow {
+    font-size: 0.6875rem;
+    margin-bottom: 2px;
+  }
+  .phase-tab-title {
+    font-size: 0.8125rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 380px) {
   .phase-nav-tabs {
     grid-template-columns: 1fr;
   }
