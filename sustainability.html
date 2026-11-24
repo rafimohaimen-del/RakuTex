@@ -400,40 +400,43 @@
     </section>
 
     <!-- OUR OWN COMMITMENTS -->
-    <section class="section-pad" style="background-color: var(--rt-paper); border-top: 1px solid var(--rt-line);">
+    <section class="section-pad commitments-section" style="background-color: var(--rt-paper); border-top: 1px solid var(--rt-line);">
       <div class="container">
-        <div class="grid" style="grid-template-columns: 1fr 1.5fr; gap: 48px; align-items: start;">
-          <div>
+        <div class="commitments-grid">
+          <div class="commitments-intro">
             <span class="eyebrow eyebrow-olive">OUR OWN COMMITMENTS</span>
-            <h2 style="margin-bottom: 20px;">Beyond compliance: <span class="accent-gold" style="color: var(--rt-olive-500);">people first.</span></h2>
-            <p style="font-size: 1rem; color: var(--rt-text-muted); line-height: 1.6; margin-bottom: 24px;">
+            <h2 class="commitments-title">Beyond compliance: <span class="accent-gold" style="color: var(--rt-olive-500);">people first.</span></h2>
+            <p class="commitments-lead">
               Compliance certificates protect baseline standards. Our genuine commitment is investing in the humans who make the garments.
             </p>
-            <a href="about.html#vision" class="text-link">See the full Vision 2030 roadmap <span>→</span></a>
+            <a href="about.html#vision" class="commitments-roadmap-link">
+              <span>See the full Vision 2030 roadmap</span>
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
 
-          <div class="flex flex-col gap-4">
-            <div class="pillar-card flex items-center gap-4">
-              <div style="font-family: var(--rt-font-label); font-size: 1.5rem; font-weight: 700; color: var(--rt-gold-500); width: 64px; flex-shrink: 0;">2026</div>
-              <div>
-                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">Children's education</h4>
-                <p style="font-size: 0.875rem; color: var(--rt-text-muted);">Direct financial aid for the education of workers' children.</p>
+          <div class="commitments-cards-list">
+            <div class="commitment-card">
+              <div class="commitment-year-badge">2026</div>
+              <div class="commitment-card-body">
+                <h3 class="commitment-card-title">Children's education</h3>
+                <p class="commitment-card-desc">Direct financial aid for the education of workers' children.</p>
               </div>
             </div>
 
-            <div class="pillar-card flex items-center gap-4">
-              <div style="font-family: var(--rt-font-label); font-size: 1.5rem; font-weight: 700; color: var(--rt-gold-500); width: 64px; flex-shrink: 0;">2027</div>
-              <div>
-                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">Training institute</h4>
-                <p style="font-size: 0.875rem; color: var(--rt-text-muted);">Developing mid-level supervisors and managers for the RMG sector.</p>
+            <div class="commitment-card">
+              <div class="commitment-year-badge">2027</div>
+              <div class="commitment-card-body">
+                <h3 class="commitment-card-title">Training institute</h3>
+                <p class="commitment-card-desc">Developing mid-level supervisors and managers for the RMG sector.</p>
               </div>
             </div>
 
-            <div class="pillar-card flex items-center gap-4">
-              <div style="font-family: var(--rt-font-label); font-size: 1.5rem; font-weight: 700; color: var(--rt-gold-500); width: 64px; flex-shrink: 0;">2029</div>
-              <div>
-                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">Green factory</h4>
-                <p style="font-size: 0.875rem; color: var(--rt-text-muted);">Our own state-of-the-art facility, built with zero-waste and sustainable architecture throughout.</p>
+            <div class="commitment-card">
+              <div class="commitment-year-badge">2029</div>
+              <div class="commitment-card-body">
+                <h3 class="commitment-card-title">Green factory</h3>
+                <p class="commitment-card-desc">Our own state-of-the-art facility, built with zero-waste and sustainable architecture throughout.</p>
               </div>
             </div>
           </div>
@@ -551,9 +554,20 @@
     </div>
   </footer>
 
+  <!-- Floating WhatsApp Action -->
   <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat with CEO on WhatsApp">
     <svg viewBox="0 0 24 24"><use href="assets/icons/icons.svg#icon-whatsapp"></use></svg>
   </a>
+
+  <!-- Fixed Mobile Bottom Action Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="https://wa.me/8801676792044" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn mobile-bar-btn-whatsapp">
+      WhatsApp
+    </a>
+    <a href="quote.html" class="mobile-bar-btn mobile-bar-btn-quote">
+      Request a quote →
+    </a>
+  </div>
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/filter.js"></script>

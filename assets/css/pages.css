@@ -1493,6 +1493,173 @@
 }
 
 /* ==========================================================================
+   SUSTAINABILITY: OUR OWN COMMITMENTS SECTION
+   ========================================================================== */
+.commitments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.commitments-title {
+  font-family: var(--rt-font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 600;
+  color: #1E2310;
+  margin: 8px 0 16px 0;
+  line-height: 1.15;
+}
+
+.commitments-lead {
+  font-size: 1rem;
+  color: var(--rt-text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.commitments-roadmap-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #57622A;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.commitments-roadmap-link:hover {
+  color: #384218;
+}
+
+.commitments-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commitment-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 28px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E6D4;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(87, 98, 42, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.commitment-card:hover {
+  transform: translateY(-2px);
+  border-color: #8C9950;
+}
+
+.commitment-year-badge {
+  font-family: var(--rt-font-label);
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: #DDA726;
+  letter-spacing: -0.02em;
+  width: 72px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.commitment-card-body {
+  flex: 1;
+}
+
+.commitment-card-title {
+  font-family: var(--rt-font-body);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #1E2310;
+  margin: 0 0 4px 0;
+}
+
+.commitment-card-desc {
+  font-size: 0.90625rem;
+  color: #585F4C;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .commitments-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .commitments-grid {
+    gap: 22px;
+  }
+
+  .commitments-title {
+    font-size: clamp(1.75rem, 5.5vw, 2.15rem);
+    margin-bottom: 12px;
+  }
+
+  .commitments-lead {
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    margin-bottom: 18px;
+  }
+
+  .commitments-roadmap-link {
+    display: inline-flex;
+    padding: 10px 18px;
+    background-color: #F0F3E8;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+
+  .commitments-cards-list {
+    gap: 12px;
+  }
+
+  .commitment-card {
+    padding: 16px 18px;
+    border-radius: 14px;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .commitment-year-badge {
+    font-size: 1.35rem;
+    width: 52px;
+    padding-top: 2px;
+  }
+
+  .commitment-card-title {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+
+  .commitment-card-desc {
+    font-size: 0.84375rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 380px) {
+  .commitment-card {
+    gap: 12px;
+    padding: 14px 14px;
+  }
+
+  .commitment-year-badge {
+    font-size: 1.2rem;
+    width: 46px;
+  }
+}
+
+/* ==========================================================================
    CONTACT / RFQ PAGE
    ========================================================================== */
 .rfq-layout-grid {
