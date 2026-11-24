@@ -1920,6 +1920,141 @@
 }
 
 /* ==========================================================================
+   SERVICES: BUYER QUESTIONS (FAQ) SECTION
+   ========================================================================== */
+.buyer-questions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.buyer-questions-title {
+  font-family: var(--rt-font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 600;
+  color: #1E2310;
+  margin: 8px 0 14px 0;
+  line-height: 1.18;
+}
+
+.buyer-questions-desc {
+  font-size: 0.9375rem;
+  color: var(--rt-text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.buyer-questions-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--rt-gold-500);
+  color: #1E2310;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  padding: 12px 24px;
+  border-radius: var(--rt-radius-pill);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.buyer-questions-wa-btn:hover {
+  background-color: #DE9C1B;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .buyer-questions-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .buyer-questions-grid {
+    gap: 24px;
+  }
+
+  .buyer-questions-title {
+    font-size: clamp(1.75rem, 5.5vw, 2.15rem);
+    margin-bottom: 10px;
+  }
+
+  .buyer-questions-desc {
+    font-size: 0.90625rem;
+    line-height: 1.55;
+    margin-bottom: 18px;
+  }
+
+  .buyer-questions-wa-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+    border-radius: 12px;
+    font-size: 0.9375rem;
+  }
+
+  .accordion {
+    gap: 10px;
+  }
+
+  .accordion-item {
+    background-color: #FFFFFF;
+    border: 1px solid #E1E6D4;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  }
+
+  .accordion-item.active {
+    border-color: #6E7C35;
+    box-shadow: 0 4px 14px rgba(87, 98, 42, 0.06);
+  }
+
+  .accordion-trigger {
+    padding: 16px 18px;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    gap: 12px;
+  }
+
+  .accordion-trigger span:first-child {
+    font-weight: 600;
+    color: #1E2310;
+  }
+
+  .accordion-icon {
+    width: 26px;
+    height: 26px;
+    font-size: 1.125rem;
+    background-color: #F0F3E8;
+    color: #57622A;
+  }
+
+  .accordion-item.active .accordion-icon {
+    background-color: #57622A;
+    color: #FFFFFF;
+  }
+
+  .accordion-content {
+    padding: 0 18px;
+  }
+
+  .accordion-item.active .accordion-content {
+    padding-bottom: 18px;
+  }
+
+  .accordion-body {
+    font-size: 0.875rem;
+    line-height: 1.62;
+    color: #484E3D;
+    border-top: 1px solid #ECEFE2;
+    padding-top: 12px;
+  }
+}
+
+/* ==========================================================================
    ABOUT PAGE: EXECUTIVE LEADERSHIP SECTION (from About-roles.png)
    ========================================================================== */
 .about-leadership-title {
