@@ -304,8 +304,15 @@
 }
 
 /* ==========================================================================
-   ABOUT: AT A GLANCE TABLE & ROADMAP
+   ABOUT: PAGE LAYOUT & RESPONSIVE COMPONENTS
    ========================================================================== */
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: start;
+}
+
 .at-a-glance-card {
   background-color: var(--rt-surface);
   border: 1px solid var(--rt-line);
@@ -344,6 +351,125 @@
   font-weight: 600;
   color: var(--rt-text);
   padding: 14px 0;
+}
+
+.about-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about-japan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-japan-brands-label {
+  font-family: var(--rt-font-label);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rt-olive-300);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.about-japan-brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.about-japan-brand-item {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 14px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: var(--rt-font-label);
+  font-weight: 700;
+  color: var(--rt-white);
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.vision-mobile-swipe-hint {
+  display: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6E7C35;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 990px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-japan-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .section-pad-sm {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .vision-mobile-swipe-hint {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  .at-a-glance-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .glance-table tr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .glance-table th {
+    width: 100%;
+    padding: 0 0 3px 0;
+    font-size: 0.6875rem;
+    color: #6A705B;
+  }
+
+  .glance-table td {
+    width: 100%;
+    padding: 0;
+    font-size: 0.875rem;
+  }
+
+  .about-japan-brands {
+    gap: 8px;
+  }
+
+  .about-japan-brand-item {
+    padding: 10px 6px;
+    font-size: 0.8125rem;
+  }
 }
 
 /* ==========================================================================
@@ -1945,8 +2071,38 @@
     gap: 32px;
   }
   .about-leader-photo-wrap {
-    max-width: 320px;
+    max-width: 280px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-leader-photo-wrap {
+    max-width: 220px;
+  }
+
+  .about-career-pill {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+  }
+
+  .about-leader-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    background-color: var(--rt-white);
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(87, 98, 42, 0.12);
+    width: 100%;
+  }
+
+  .about-leader-contact-link,
+  .about-leader-contact-static {
+    font-size: 0.875rem;
+    min-height: 28px;
+    display: inline-flex;
+    align-items: center;
   }
 }
 
