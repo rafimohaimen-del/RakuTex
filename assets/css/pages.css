@@ -2067,18 +2067,110 @@
 
 @media (max-width: 900px) {
   .about-leader-row {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .about-leader-photo-wrap {
-    max-width: 280px;
-    margin: 0 auto;
+    grid-template-columns: minmax(240px, 300px) 1fr;
+    gap: 36px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .about-leader-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    column-gap: 18px;
+    row-gap: 16px;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
   .about-leader-photo-wrap {
-    max-width: 220px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 110px;
+    height: 135px;
+    max-width: 110px;
+    border-radius: 55px 55px 14px 14px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 8px 20px rgba(87, 98, 42, 0.1);
+  }
+
+  .about-leader-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-leader-info {
+    display: contents;
+  }
+
+  .about-leader-title-wrap {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .about-leader-role {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #6E7C35;
+    margin-bottom: 2px;
+    line-height: 1.25;
+  }
+
+  .about-leader-name {
+    font-size: clamp(1.25rem, 4.5vw, 1.55rem);
+    line-height: 1.15;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .about-leader-name-ja {
+    font-size: 0.8125rem;
+    color: #6A6D60;
+  }
+
+  .about-leader-desc {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+  }
+
+  .about-leader-bio {
+    font-size: 0.9375rem;
+    line-height: 1.62;
+    color: #3F4335;
+    margin: 0 0 10px 0;
+  }
+
+  .about-leader-bio:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-career-wrap {
+    grid-column: 1 / -1;
+    margin-top: 12px;
+  }
+
+  .about-career-label {
+    font-size: 0.8125rem;
+    color: #6A6E60;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .about-career-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 0;
   }
 
   .about-career-pill {
@@ -2087,6 +2179,8 @@
   }
 
   .about-leader-contacts {
+    grid-column: 1 / -1;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -2095,6 +2189,7 @@
     border-radius: 12px;
     border: 1px solid rgba(87, 98, 42, 0.12);
     width: 100%;
+    margin-top: 14px;
   }
 
   .about-leader-contact-link,
@@ -2103,6 +2198,28 @@
     min-height: 28px;
     display: inline-flex;
     align-items: center;
+  }
+
+  .about-leader-divider {
+    margin: 0 0 40px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .about-leader-row {
+    grid-template-columns: 96px 1fr;
+    column-gap: 14px;
+  }
+
+  .about-leader-photo-wrap {
+    width: 96px;
+    height: 118px;
+    max-width: 96px;
+    border-radius: 48px 48px 10px 10px;
+  }
+
+  .about-leader-name {
+    font-size: 1.25rem;
   }
 }
 
