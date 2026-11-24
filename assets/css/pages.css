@@ -1580,7 +1580,9 @@
   align-items: center;
 }
 
-.category-clean-icon svg {
+.category-clean-icon svg,
+.category-clean-icon img,
+.category-icon-img {
   width: 40px;
   height: 40px;
   stroke: var(--rt-olive-500);
@@ -1588,6 +1590,8 @@
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+  object-fit: contain;
+  display: block;
 }
 
 .category-clean-title {
@@ -2510,9 +2514,13 @@
   .category-clean-icon {
     margin-bottom: 14px;
   }
-  .category-clean-icon svg {
+  .category-clean-icon svg,
+  .category-clean-icon img,
+  .category-icon-img {
     width: 36px;
     height: 36px;
+    object-fit: contain;
+    display: block;
   }
   .category-clean-title {
     font-size: 1.1rem;
