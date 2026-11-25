@@ -691,6 +691,7 @@
 
 .accordion-item.active {
   border-color: var(--rt-olive-400);
+  padding-bottom: 24px;
 }
 
 .accordion-trigger {
@@ -735,12 +736,8 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.35s ease, padding 0.35s ease;
+  transition: max-height 0.35s ease;
   padding: 0 24px;
-}
-
-.accordion-item.active .accordion-content {
-  padding-bottom: 24px;
 }
 
 .accordion-body {
