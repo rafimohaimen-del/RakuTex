@@ -1950,28 +1950,14 @@
    ========================================================================== */
 .services-work-section {
   background-color: #57622A;
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-position: right clamp(-20px, 1vw, 50px) center;
+  background-size: clamp(540px, 52vw, 820px) auto;
   color: var(--rt-white);
   padding: clamp(72px, 9vw, 120px) 0;
   position: relative;
   overflow: hidden;
-}
-
-.services-work-section .container {
-  position: relative;
-  z-index: 1;
-}
-
-.services-watermark {
-  position: absolute;
-  right: clamp(-40px, 1vw, 50px);
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(500px, 48vw, 720px);
-  height: clamp(500px, 48vw, 720px);
-  opacity: 0.06;
-  pointer-events: none;
-  stroke: var(--rt-gold-500);
-  z-index: 0;
 }
 
 .services-work-grid {
@@ -3253,9 +3239,6 @@
     background-color: #455122;
     background-image: none;
     padding: 44px 0;
-  }
-  .services-watermark {
-    display: none;
   }
   .services-work-grid {
     grid-template-columns: 1fr;
