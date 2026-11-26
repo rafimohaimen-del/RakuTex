@@ -2861,6 +2861,31 @@
 }
 
 /* ==========================================================================
+   HOME PAGE: WHO WE ARE SECTION (DESKTOP + TABLET STACK)
+   ========================================================================== */
+.home-who-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 48px;
+  align-items: start;
+}
+
+.home-pillars-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .home-who-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .home-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* ==========================================================================
    HOME PAGE: WORK MODEL 4-PHASE SECTION (DESKTOP)
    ========================================================================== */
 .home-work-model-section {
