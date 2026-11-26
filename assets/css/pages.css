@@ -860,13 +860,22 @@
 .gallery-preview-box {
   background-color: #EAECE0;
   border-radius: 18px;
-  padding: 40px;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 380px;
+  height: 380px;
   position: relative;
+  border: 1px solid #E1E5D6;
+}
+
+.gallery-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .gallery-preview-icon {
@@ -881,13 +890,14 @@
   position: absolute;
   bottom: 16px;
   left: 16px;
-  background-color: #FFFFFF;
-  color: #555E45;
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(4px);
+  color: #2D3318;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 6px 14px;
   border-radius: 9999px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-thumbs-row {
@@ -899,9 +909,11 @@
 
 .gallery-thumb-btn {
   background-color: #F4F5EB;
-  border: 1px solid #E1E5D6;
+  border: 2px solid #E1E5D6;
   border-radius: 12px;
   height: 80px;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -913,15 +925,25 @@
   font-family: inherit;
 }
 
+.gallery-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.gallery-thumb-btn:hover img {
+  transform: scale(1.05);
+}
+
 .gallery-thumb-btn.active {
-  border: 1.5px solid #2D3318;
-  background-color: #F4F5EB;
-  color: #1E2310;
+  border-color: #2D3318;
+  box-shadow: 0 0 0 2px rgba(87, 98, 42, 0.25);
 }
 
 .gallery-thumb-btn:hover:not(.active) {
-  border-color: #A8B097;
-  background-color: #EAECE0;
+  border-color: #7A8450;
 }
 
 /* WHAT WE MAKE SECTION */
@@ -1324,8 +1346,18 @@
   .category-checkpoints-grid {
     grid-template-columns: 1fr;
   }
+  .gallery-preview-box {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 240px;
+  }
   .gallery-thumbs-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .gallery-thumb-btn {
+    height: 64px;
+    border-radius: 10px;
   }
   .category-cta-container {
     flex-direction: column;

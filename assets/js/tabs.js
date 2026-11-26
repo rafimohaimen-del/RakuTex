@@ -58,7 +58,7 @@ function initPhaseStepper() {
 function initGallerySwitcher() {
   const thumbBtns = document.querySelectorAll('.gallery-thumb-btn');
   const previewCaption = document.getElementById('gallery-active-caption');
-  const previewIcon = document.getElementById('gallery-active-icon');
+  const previewImg = document.getElementById('gallery-active-icon');
 
   if (!thumbBtns.length) return;
 
@@ -66,6 +66,13 @@ function initGallerySwitcher() {
     btn.addEventListener('click', () => {
       thumbBtns.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
+
+      const src = btn.getAttribute('data-src');
+      const alt = btn.getAttribute('data-alt');
+      if (previewImg && src) {
+        previewImg.src = src;
+        if (alt) previewImg.alt = alt;
+      }
 
       const captionText = btn.getAttribute('data-caption') || `Gallery image ${i + 1} of 4 — supplied by Raku Tex`;
       if (previewCaption) {
